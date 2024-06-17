@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="miestilo.css">
+
+</head>
+<body class="fondo">
+    <!-- No cree un nav porque utilicé swiper y eso tiene conflicto con Bootstrap, hace que se rompa 
+     la galeria asi que solo dejé un botón para volver al inicio -->
+    <h3><a href="principal.html">volver</a></h3>
+
+
+
+<!-- titulo -->
+    <h1 class="titulo">Perros en adopción</h1>
+<!-- galeria -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="foto.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="dog-content">
+                    <div class="dog-txt" >
+                        <span>Perro tonto</span>
+                        <h3>Raza: tonta</h3>
+                        <p>este perro tonto culiado es un tonto reculio que saca la lengua asi como lo ves</p>
+                    </div>
+                    <div class="dog-img">
+                        <img src="https://i.pinimg.com/236x/ab/2b/8d/ab2b8debc141ebab311f9253123990d7.jpg" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">Adoptar</a>
+            </div>
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="foto.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="dog-content">
+                    <div class="dog-txt" >
+                        <span>tontin</span>
+                        <h3>Raza: Bull terrier inglés</h3>
+                        <p>este weon ciego que tiene canicas en vez de ojos es tantonto que no sabe q se llama tontin</p>
+                    </div>
+                    <div class="dog-img">
+                        <img src="https://i.pinimg.com/564x/12/c8/2b/12c82b231066985b425044a959aaf8b9.jpg" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">Adoptar</a>
+            </div>
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="foto.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="dog-content">
+                    <div class="dog-txt" >
+                        <span>Morcilla</span>
+                        <h3>RAZA: Perro Salchicha</h3>
+                        <p>este perro bien regordete asi como lo ves es de la raza de perros salchicha pero ya casi tira a lo morcilla por lo negro y gordo que es, que tonto</p>
+                    </div>
+                    <div class="dog-img">
+                        <img src="https://i.pinimg.com/236x/bc/4b/b9/bc4bb991c2c9388c377ac18ec74f9de1.jpg" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">Adoptar</a>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- script para la animación/rotación de la galeria -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper",{
+            effect:"coverflow",
+            grabCursor:true,
+            centeredSlides:true,
+            slidesPerView:"auto",
+            loop:true,
+            coverflowEffect:{
+                depth:500,
+                modifer:1,
+                slidesShadows:true,
+                stretch:0
+            }
+            })
+    </script>
+</body>
+</html>
